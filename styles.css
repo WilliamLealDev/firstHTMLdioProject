@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color: rgb(0, 48, 48);
+    padding: 10px 20px 0px;
+    
+}
+.header {
+    background-color: rgb(5, 108, 108);
+    min-height: 0px;
+    width: 100%;
+}
+.content {
+    background-color: white;
+    min-height: 500px;
+    padding: 20px;
+    
+}
+
+img{
+   width: 100%;
+   max-height: 230px;
+    display: block;
+}
+
+.footer {
+  background-color: #edfffc; /*cor de fundo do footer*/
+  padding: 5px; /*espaçamento interno*/
+  text-align: center; /*alinhamento de texto*/
+  font-size: 14px; /*tamanho da fonte*/
+  color: black; /*cor do texto*/
+  min-height: 80px;
+}
+
+ul {
+    list-style-type: none; /* remove as bolinhas */
+}
+
+li{
+padding-bottom: 25px;
+}
+
+.list-title{
+    font-size: 30px; /* tamanho da fonte */
+    color: white; /* cor da fonte */
+    margin-bottom: 30px; /* espaço abaixo do título */
+}
+
+
+a{
+    color: white; /*cor do link*/
+    text-decoration: none; /*retira a sublinhado do link*/
+}
+
+a:hover{
+    color: #007bff; /*cor do link quando passado o mouse*/
+    text-decoration: underline; /*coloca sublinhado no link*/
+}
+
+.table{
+    border-collapse: collapse;
+    width: 500px;
+    border-color: black;
+    border-spacing: 50px;
+    text-align: left;
+    margin: auto;
+}
+
+tr, th, td{
+    border: 1px solid black;
+}
+
+th{
+    background-color:lightblue
+}
+
+.contenth2{
+    text-align: center;
+}
+
+.leftContent{
+    display: flex;
+    float: left;
+    width: 45%;
+    margin-left: 2.5%;
+}
+
+.rightContent{
+    display: flex;
+    float: right;
+    width: 45%;
+    margin-right: 2.5%;
+}
+
+.contactUs p {
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .leftContent, .rightContent {
+        float: none;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+}
